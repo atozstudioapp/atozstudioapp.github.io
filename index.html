@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATOZ STUDIO</title>
+  <meta name="description" content="ATOZ STUDIO는 일상에 필요한 작은 앱을 만듭니다. We make small apps for everyday life.">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="ATOZ STUDIO">
+  <meta property="og:description" content="일상에 필요한 작은 앱을 만듭니다. We make small apps for everyday life.">
+  <meta property="og:image" content="https://atozstudioapp.github.io/assets/atoz-studio-square.png">
+  <style>
+    :root {
+      --blue: #4290B9;
+      --gray: #BBBDBF;
+      --ink: #24324A;
+      --muted: #5B6676;
+      --line: #E4E7EC;
+      --bg: #FFFFFF;
+      --soft: #F5F8FB;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 56px 0 40px; }
+    header img { display: block; width: 200px; height: auto; }
+    .intro { padding: 8px 0 48px; border-bottom: 1px solid var(--line); }
+    .intro h1 { margin: 0 0 8px; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+    .intro p { margin: 0; color: var(--muted); }
+    section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+    section h2 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
+    section h2 span { margin-left: 6px; font-size: 14px; font-weight: 400; color: var(--muted); }
+    section p { margin: 12px 0 0; }
+    .label { margin-top: 20px; padding: 24px; background: var(--soft); border-radius: 12px; }
+    .label img { display: block; width: 220px; max-width: 100%; height: auto; }
+    .label p { margin: 14px 0 0; color: var(--muted); }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    .mail { font-size: 17px; font-weight: 600; }
+    .note { color: var(--muted); font-size: 15px; }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: 14px; }
+    footer dl { margin: 0 0 12px; display: grid; grid-template-columns: max-content 1fr; gap: 2px 16px; }
+    footer dt { font-weight: 600; color: var(--ink); }
+    footer dd { margin: 0; }
+    @media (max-width: 480px) {
+      header { padding: 40px 0 28px; }
+      header img { width: 160px; }
+      .intro h1 { font-size: 22px; }
+      .label { padding: 20px; }
+      .label img { width: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/atoz-studio.svg" alt="ATOZ STUDIO" width="200" height="77">
+    </header>
+
+    <main>
+      <div class="intro">
+        <h1>일상에 필요한 작은 앱을 만듭니다.</h1>
+        <p>We make small apps for everyday life.</p>
+      </div>
+
+      <section aria-labelledby="labels">
+        <h2 id="labels">레이블<span>Label</span></h2>
+        <div class="label">
+          <img src="assets/studio-shushu.svg" alt="STUDIO SHUSHU">
+          <p>생활 앱 시리즈 · Everyday life apps</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">연락<span>Contact</span></h2>
+        <p><a class="mail" href="mailto:atozstudio.app@gmail.com">atozstudio.app@gmail.com</a></p>
+      </section>
+
+      <section aria-labelledby="privacy">
+        <h2 id="privacy">개인정보처리방침<span>Privacy Policy</span></h2>
+        <p class="note">앱을 출시하면 앱마다 개인정보처리방침을 이곳에 올립니다.<br>Privacy policies for each app will be listed here at launch.</p>
+      </section>
+    </main>
+
+    <footer>
+      <dl>
+        <dt>상호</dt><dd>ATOZ STUDIO (아토즈 스튜디오)</dd>
+        <dt>대표</dt><dd>이상주</dd>
+        <dt>사업자등록번호</dt><dd>117-43-01513</dd>
+        <dt>이메일</dt><dd><a href="mailto:atozstudio.app@gmail.com">atozstudio.app@gmail.com</a></dd>
+      </dl>
+      <p>&copy; 2026 ATOZ STUDIO</p>
+    </footer>
+  </div>
+</body>
+</html>
